@@ -1,0 +1,69 @@
+@media only screen and (max-width: 600px){
+    .card_layer1{
+        display: block;
+    }
+    .card_layer2{
+        display: block;
+    }
+    .card_layer1,.card_layer2 ,.card1,.card2,.card3{
+        margin-top: 60px;
+        margin-left: 70px;
+    }
+    .card_layer1 button{
+        margin-left: 10px;
+        border-radius: 30px;
+        border: none;
+        margin-top: 130px;
+        background-color: white;
+        background: white;
+        width: 80px;
+        height: 40px;
+    }
+    .card_layer1 .card-link {
+        text-decoration: none;
+        color: white;
+        float: right;
+        margin-top: 140px;
+        margin-right: 20px;
+    }
+
+
+    .card_layer2 button{
+        margin-left: 10px;
+        border-radius: 30px;
+        border: none;
+        margin-top: 130px;
+        background-color: white;
+        background: white;
+        width: 80px;
+        height: 40px;
+    }
+    .card_layer2 .card-link {
+        text-decoration: none;
+        color: white;
+        float: right;
+        margin-top: 140px;
+        margin-right: 20px;
+    }
+
+    .card_layer1 h3 {
+        text-align: left;
+        margin-left: 20px;
+        background: none;
+        margin-top: 40px;
+    }
+    
+    .card_layer1 img {
+        width: 80px;
+        height: 80px;
+        float: right;
+        margin-top: -80px;
+        border-bottom-left-radius: 50px;
+    }
+
+
+    .Resource .text-button button{
+        margin-left: 150px;
+        margin-top: 30px;
+    }
+}

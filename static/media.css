@@ -1,0 +1,99 @@
+@media only screen and (max-width: 600px) {
+    .container1 {
+        height: 1000px;
+    }
+
+    .home {
+        display: block;
+        text-align: center;
+        margin: 100px;
+        line-height: 35px;
+    }
+
+    .navbar-brand img {
+        margin-left: 10px;
+    }
+
+    .home .gif_img {
+        width: 300px;
+        height: 250px;
+        margin-top: 60px;
+        margin-left: -20px;
+    }
+
+    /*-----------------home container 2 ---------------------------------------------------------------------------------------*/
+    .home_con2 {
+        height: 330vh;
+    }
+
+    .home_con2 h3 {
+        font-size: 30px;
+        color: white;
+        margin-top: -200%;
+        margin-left: 70px;
+        margin-bottom: -20px;
+    }
+
+    #content img {
+        margin-top: -20px;
+        margin-right: 10px;
+    }
+
+    #card1 {
+        margin-top: 10px;
+        margin-left: 100px;
+    }
+
+    #card2 {
+        margin-top: 20px;
+        margin-left: 100px;
+
+    }
+
+    #card3 {
+        margin-top: 20px;
+        margin-left: 100px;
+    }
+
+    #card4 {
+        margin-top: 20px;
+        margin-left: 100px;
+    }
+
+    #card5 {
+
+        margin-left: 100px;
+        margin-top: 20px;
+
+    }
+    /*------------------------- home container 4 ------------------------------------------------*/
+    
+    .home_con4{
+        background-color: #010b2f;        
+        box-shadow: 0px 3px 10px 5px gray;
+        height: 180vh;
+        margin-top: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .footer{
+        display: block;
+        color: white;   
+    }
+    .footer .div1 img{
+         margin-left: -10px;
+        margin-top: 30px;
+    }
+    .footer .div1{
+        padding-left: 50px;
+    }
+    .footer .div2{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .footer .div3{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}

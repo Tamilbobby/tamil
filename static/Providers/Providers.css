@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-item a {
+    margin-right: 20px;
+    font-size: 20px;
+    color: black;
+    margin-right: 25px;
+}
+
+.navbar-brand img {
+    margin-left: 25px;
+}
+
+.pro_card {
+    display: flex;
+}
+
+.pro_card h3 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 34rem;
+}
+
+.pro_card #card1 {
+    width: 18rem;
+    height: 25rem;
+    border-radius: 20px;
+    margin-top: 100px;
+    margin-left: -31rem;
+    background-color: black;
+    padding-top: 40px;
+}
+
+.pro_card #card1:hover {
+    transform: translatex(-15px);
+    transition: 0.5s;
+}
+
+#card-body1 button {
+    background-color: white;
+    border: none;
+    height: 60px;
+    width: 200px;
+    margin-top: 70px;
+    margin-left: 30px;
+}
+
+.card button a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.pro_card #card2 {
+    background-color: #87a1ff;
+    width: 18rem;
+    height: 25rem;
+    border-radius: 20px;
+    margin-top: 100px;
+    margin-left: 200px;
+    padding-top: 40px;
+}
+
+.pro_card #card2:hover {
+    transform: translatex(15px);
+    transition: 0.5s;
+}
+
+#card-body2 button {
+    background-color: white;
+    border: none;
+    height: 60px;
+    width: 200px;
+    margin-top: 70px;
+    margin-left: 30px;
+}
+
+.pro_card #card3 {
+    background-color: #ffb803;
+    width: 18rem;
+    height: 25rem;
+    border-radius: 20px;
+    margin-top: 80px;
+    margin-left: -530px;
+    margin-bottom: 10px;
+    padding-top: 80px;
+}
+
+.pro_card #card3:hover {
+    transform: translatey(15px);
+    transition: 0.5s;
+}
+
+#card-body3 button {
+    background-color: white;
+    border: none;
+    height: 60px;
+    width: 200px;
+    margin-bottom: 50px;
+    margin-left: 27px;
+    margin-top: 20px;
+}
+
+.pro_txt {
+    background-color: white;
+    padding-bottom: 10px;
+    padding-right: 170px;
+    padding-left: 170px;
+    border-bottom-left-radius: 1200px;
+    border-bottom-right-radius: 1200px;
+    margin-top: 20px;
+}
+
+.pro_txt p {
+    font-size: 40px;
+    font-weight: 600;
+    color: red;
+    display: flex;
+    margin-left: -85px;
+}
+
+
+
+/* Form Page Style */
+.container {
+    background-image: url(images/Background\ \(1\).png);
+    background-size: cover;
+    width: 500px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Image {
+    width: 230px;
+    height: 180px;
+}
+.card-bg{
+    width: 550px;
+    height: 550px;
+    border-radius: 400px;
+    background-color: #595fee;
+}
+.card-color{
+    width: 500px;
+    height: 500px;
+    border-radius: 300px;
+    background-color: #4a4ecc;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+.CardBody {
+    width: 400px;
+    height: 500px;
+    background-color:#4a4ec6;
+    opacity: 0.9;
+    border:none;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.card-items input {
+    width: 250px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+.card-items button {
+    width: 150px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+}
+.card-items button a{
+    text-decoration: none;
+    font-size: 20px;
+}
+/* Form Page Style */

@@ -1,0 +1,68 @@
+@media only screen and (max-width: 600px){
+    .Rt_tag{
+        margin :30px 190px;
+        line-height: 20px;
+    }
+    .div2{
+        margin: 0px 90px;
+        line-height: 20px;
+        display: grid;
+        grid-row-gap:20px;
+    }
+    .div3{
+        margin-top: 1px;
+        margin-bottom: 30px;
+        margin-left: -10px;
+        line-height: 20px;
+        display: grid;
+        grid-row-gap:30px;
+    }
+    .div4{
+        margin: 0 90px;
+        line-height: 20px;
+        display: grid;
+        grid-row-gap:30px;
+    }
+    .div4 img{
+        width: 500px;
+        height: 500px;
+        margin-left:-190px ;
+        margin-top:10px ;
+    }
+    .div5{
+        margin-top:60px;
+        margin-left: 80px;
+        line-height: 20px;
+        margin-bottom: 10px;
+        display: grid;
+        grid-row-gap:20px;
+    }
+    .div5 .submit{
+         margin-top: -620px;
+         margin-left: -20px;
+         width: 80px;
+         height: 40px;
+    }
+    .div5 .cancel{
+        width: 80px;
+        height: 40px;
+        margin-left: 70px;
+        margin-top: -640px;
+   }
+    .div6{
+        margin-left: -60px;
+        margin-top: 50px;
+        line-height: 20px;
+        display: grid;
+        grid-row-gap:40px;
+    }
+    .div7{
+        flex-direction: column;
+        margin-left: -290px;
+        margin-top: 40px;
+        line-height: 20px;
+        display: grid;
+        grid-row-gap:30px;
+    }
+
+}

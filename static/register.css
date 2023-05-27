@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-lg img {
+    margin-top: 300px;
+    margin-left: 60px;
+}
+.container-lg {
+    border:1px solid #32425a;
+}
+.buttons {
+    display: flex;
+    position: absolute;
+    margin-top: 100px;
+    width: 50px;
+    padding: 0 5px;
+}
+.buttons button a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+label{
+    color: #ffff;
+}
+.button1 {
+    border: white;
+    background-color: #32425a;
+    color: white;
+    margin-left: 90px;
+    padding: 10px 50px;
+}
+
+.button2 {
+    border: white;
+    background-color: #32425a;
+    color: white;
+    margin-left: 50px;
+    padding: 10px 50px;
+}
+.div1{
+    background-image: url(Images/registerBack.png);
+}
+.div2 {
+    background-image: url(Images/0121.png);
+    background-color: #32425a;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    margin-bottom: 0%;
+}
+.icon{
+    margin: 70px 100px;
+}
+form button a{
+    text-decoration: none;
+    color: #ffff;
+}

@@ -1,0 +1,53 @@
+<<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ECR</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='ECR/ECR_form.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='ECR/ECR_media.css') }}">
+</head>
+
+<body>
+  <div class="container">
+    <form action="/repo" method="POST">
+    <<img src="{{url_for('static',filename='images/form_validation.png')}}" alt="">
+    <div class="form">
+      <h2>ECR Create</h2>
+      <label for="tbuser">Access Key :</label><input type="text" name="access"  id="txt1" placeholder="Enter Access Key"
+        maxlength="10"><br>
+      <label for="tbuser">Security Key :</label><input type="text" name="Security" id="txt2" placeholder="Enter Security Key"
+        maxlength="10"><br>
+      <label for="tbuser">Region :</label><input type="text" name="region" id="txt3" placeholder="Enter Region" maxlength="10"><br>
+      <label for="tbuser">Name :</label> <input type="text" name="name" id="txt4" placeholder="Enter Name" maxlength="10"><br>
+      <div class="Mutability" id="Mutability">
+        <label for="tbuser">Mutability :</label><input type="radio" name="mutability"  id="txt5" value="MUTABLE"
+          name="gender"><span>Mutable</span>
+        <input type="radio" id="txt6" value="IMMUTABLE" name="gender"><span>ImMutable</span>
+      </div><br>
+      <div class="Scan" id="scan">
+        <label for="tbuser">Scan :</label><input type="radio" name="scan" id="txt7" value="True" name="scan"><span>True</span>
+        <input type="radio" class="scan" id="txt8" value="False" name="scan"><span>False</span>
+      </div><br>
+      <button class="button" id="button">Create</button>
+      
+    </div>
+  </div>
+</form>
+  <!--<div class="popup" id="popup">
+    <div class="popup-content">
+        <h3>check Your Data</h3> <br>
+        <div class="output" id="output1">
+        </div>
+        <div class="p_button">
+          <button class="close" id="button">Back</button>
+          <button class="close" id="button">Proceed</button>
+        </div>
+    </div>
+  </div>-->
+  <script src="{{url_for('static',filename='ECR/ECR.js')}}"></script>
+</body>
+
+</html>

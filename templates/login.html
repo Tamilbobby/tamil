@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn Form</title>
+    <link rel="stylesheet" href="{{url_for ('static',filename="login.css")}}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/4723418bde.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class="container-lg  mt-3 mb-3">
+        <div class="row">
+            <div class="div1 col-sm-6 ">
+                <div class="bg-img">
+                    <div class="col content">
+                <span>Welcom Back !</span><br>
+                <p>To stay connected with us <br>please login with your personal info</p><br>
+                <button type="button"> Sign In</button><br>
+                <a href="#"> Create Account</a>
+                <div class="social-icons">
+                    <a href="#"  title="facebook"> 
+                      <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" title="linkedin">
+                        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                      </a>
+                      <a href="#" title="linkedin">
+                        <i class="fa-brands fa-google" aria-hidden="true" style="color: #ffffff;"></i>
+                      </a>
+                    </div>
+                    </div>
+                    </div>
+            </div>
+            <div class="div2 col-sm-6">
+                  <div class="buttons">
+                    <button class="button1"><a href="{{url_for('index')}}">Home</a></button><br>
+                    <button class="button2"><a href="{{url_for('register')}}">Register</a></button><br>
+                </div> 
+                <div class=" d-flex justify-content-center align-items-center min-vh-100">
+                    <form action="/login" method="post">
+                        <i class="fa-regular fa-circle-user fa-beat-fade fa-2xl icon " style="color: #32425a;"></i><br>
+                        <span class="d-flex align-items-center justify-content-center">Let's Get Started</span>
+                        <label for="">Email :</label><br>
+                        <input type="text" id="txt1" name="email" class="w-100 rounded p-3 m-2" placeholder="Enter Email"
+                        ><br>
+                        <label for="">PassWord :</label><br>
+                        <input type="password" id="txt2" name="password" class="w-100 rounded  p-3 m-2"
+                            placeholder="PassWord"><br>
+                            <button class="LogIn"><a href="{{url_for('resources')}}">LogIn</a></button>
+                    <div class="Links">
+                        <a href="#">Forgot Password?</a>
+                        <a href="#">Not a Member yet?</a>
+                    </div>
+                    </form>
+     
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+        integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+        crossorigin="anonymous"></script>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var message ="{{ msg }}";
+            alert(message);
+        } );
+    </script>
+
+</body>
+</html>
