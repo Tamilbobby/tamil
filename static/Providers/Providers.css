@@ -133,7 +133,7 @@ body {
 
 /* Form Page Style */
 .container {
-    background-image: url(images/Background\ \(1\).png);
+    background-image: url(/static/images/Background.png);
     background-size: cover;
     width: 500px;
     height: 600px;
@@ -169,7 +169,7 @@ body {
     margin-top: 20px;
     margin-left: 50px;
 }
-.card-items input {
+.card-items input a{
     width: 250px;
     padding: 10px 20px;
     border-radius: 10px;

@@ -1,0 +1,95 @@
+#PreLoader{
+    background: white url(/static/google/images/preloader.gif) no-repeat center center ;
+    background-size: 30%;
+    height: 100vh;
+    width: 80%;
+    position: fixed;
+    z-index: 100;
+    }
+    .title span{
+     font-size: 80px;
+    }
+    .title p{
+        margin-top: 40px;
+        font-size: 50px;
+        color: darkgray;
+    }
+    .content h4{
+        font-size: 20px;
+    }
+    .buttons{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 80px;
+    }
+    .buttons a{
+        font-size: 13px;
+        margin-left: -10px;
+        text-decoration: none;
+    }
+    .buttons button{
+        border: none;
+        padding: 5px 20px;
+        border-radius: 15px;
+        margin-right: -10px;
+        color: green;
+        font-size: 1rpx;
+    }
+    .image {
+        background-image: url('images/animation-fon.png');
+        background-size: cover;
+        object-fit:contain;
+    }
+    .image img{
+        width: 400px;
+        height: 400px;
+    }
+    .card1 img{
+        width: 70px;
+        height: 70px;
+        background-color: white;
+        padding: 10px 10px;
+    }
+    .card2 img{
+        width: 70px;
+        height: 70px;
+        background-color: white;
+        padding: 10px 10px;
+    }
+    .card3 img{
+        width: 70px;
+        height: 70px;
+        background-color: white;
+        padding: 10px 10px;
+    }
+    .card4 img{
+        width: 70px;
+        height: 70px;
+        background-color: white;
+        padding: 10px 10px;
+    }
+    .card5 img{
+        width: 70px;
+        height: 70px;
+        background-color: white;
+        padding: 10px 10px;
+    }
+    .card6 img{
+        width: 70px;
+        height: 70px;
+        background-color: white;
+        padding: 10px 10px;
+    }
+    .card7 img{
+        width: 70px;
+        height: 70px;
+        background-color: white;
+        padding: 10px 10px;
+    }
+    .card8 img{
+        width: 70px;
+        height: 70px;
+        background-color: white;
+        padding: 10px 10px;
+    }

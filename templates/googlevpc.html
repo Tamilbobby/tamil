@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VPC</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='google/googlevpc/googlevpc.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-xl container" style="background-color: #88eaff;">
+        <section class="content">
+            <div class="row">
+                <div class="col-sm-6 image">
+                    <img src="{{url_for('static',filename='images/VpcBackground.png')}}" class="col d-flex align-items-center justify-content-center"
+                        alt="">
+                </div>
+                <div class="col-sm-6">
+                    <form action="/googlecloudvpc" method="post">
+                        <!-- header -->
+                        <header class="col d-flex align-items-center justify-content-center pt-4">
+                            <img src="{{url_for('static',filename='images/googlevpc.png')}}" alt="">
+                            <h3>VPC</h3>
+                        </header>
+                        <nav class="col d-flex align-items-center justify-content-center ms-3 me-3 mt-3">
+                            <div class="col-3 bg-primary "
+                                style="border-top-left-radius: 20px;border-bottom-left-radius: 20px; height: 5px;">
+                                &nbsp;</div>
+                            <div class="col-3" style="height: 5px; background-color: #db4437;">&nbsp;</div>
+                            <div class="col-3" style="height: 5px; background-color: #f4b400;">&nbsp;</div>
+                            <div class="col-3"
+                                style="border-top-right-radius: 20px;border-bottom-right-radius: 20px; height: 5px; background-color: #0f9d58;">
+                                &nbsp;</div>
+                        </nav>
+                        <!-- header -->
+                        <!-- input form -->
+                        <div class="col">
+                            <div class="col d-flex align-items-center " style="justify-content: space-evenly;">
+                                <label for="" class="col d-flex align-items-left" style="justify-content: space-between;">Project ID :</label>
+                                <input type="text" name="project id" placeholder="Project ID" id="txt1">
+                            </div>
+                            <div class="col d-flex align-items-center " style="justify-content: space-evenly;">
+                                <label for="" class="col d-flex align-items-left" style="justify-content: space-between;">Region :</label>
+                                <!--surround the select box with a "custom-select" DIV element. Remember to set the width:-->
+                                <div class="custom-select" style="width:200px;">
+                                    <select id="select1">
+                                        <option  name="option">Region</option>
+                                        <option  name="option">us-east-1</option>
+                                        <option  name="option">us-west-1</option>
+                                        <option  name="option">us-west-2</option>
+                                        <option  name="option">eu-west-1</option>
+                                        <option  name="option">eu-central-1</option>
+                                        <option  name="option">ap-southeast-1</option>
+                                        <option  name="option">ap-southeast-2</option>
+                                        <option   name="option">ap-northeast-1</option>
+                                        <option   name="option">ap-northeast-2</option>
+                                        <option   name="option">sa-east-1</option>
+                                        <option   name="option">cn-north-1</option>
+                                        <option   name="option">ap-south-1</option>
+                                        <option   name="option">US East (N. Virginia)</option>
+                                        <option   name="option">US East (Ohio)</option>
+                                        <option   name="option">US West (N. California)</option>
+                                        <option   name="option">US West (Oregon)</option>
+                                        <option   name="option">Africa (Cape Town)</option>
+                                        <option   name="option">Asia Pacific (HongKong)</option>
+                                        <option   name="option">Asia Pacific (Mumbai)</option>
+                                        <option   name="option">Asia Pacific (Osaka-Local)</option>
+                                        <option   name="option">Asia Pacific (Seoul)</option>
+                                        <option   name="option">Asia Pacific(Singapore)</option>
+                                        <option   name="option">Asia Pacific (Sydney)</option>
+                                        <option   name="option">Asia Pacific (Tokyo)</option>
+                                        <option   name="option">Canada (Central)</option>
+                                        <option   name="option">China (Beijing)</option>
+                                        <option   name="option">China (Ningxia)</option>
+                                        <option   name="option">Europe (Frankfurt)</option>
+                                        <option   name="option">Europe (Ireland)</option>
+                                        <option   name="option">Europe (London)</option>
+                                        <option   name="option">Europe (Milan)</option>
+                                        <option   name="option">Europe (Paris)</option>
+                                        <option   name="option">Europe (Stockholm)</option>
+                                        <option   name="option">Middle East (Bahrain)</option>
+                                        <option   name="option">South America (Paulo)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col d-flex align-items-center " style="justify-content: space-evenly;">
+                                <label for="" class="col d-flex align-items-left" style="justify-content: space-between;">Zone :</label>
+                                <div class="custom-select" style="width:200px;">
+                                    <select id="select2">
+                                        <option name="option">Zone </option>
+                                        <option name="option">us-east-1a </option>
+                                        <option name="option">us-east-1b</option>
+                                        <option name="option">us-east-1c</option>
+                                        <option name="option">us-east-1e</option>
+                                        <option name="option">us-west-2a  </option>
+                                        <option name="option">us-west-2b</option>
+                                        <option name="option">us-west-2c</option>
+                                        <option name="option">us-west-1a </option>
+                                        <option name="option">us-west-1b</option>
+                                        <option name="option">eu-west-1a  </option>
+                                        <option name="option">eu-west-1b</option>
+                                        <option name="option">eu-west-1c</option>
+                                        <option name="option">eu-central-1a </option>
+                                        <option name="option">eu-central-1b</option>
+                                        <option name="option">ap-southeast-1a </option>
+                                        <option name="option">ap-southeast-1b</option>
+                                        <option name="option">ap-southeast-2a  </option>
+                                        <option name="option">ap-southeast-2b</option>
+                                        <option name="option">ap-southeast-2c</option>
+                                        <option name="option">ap-northeast-1a </option>
+                                        <option name="option">ap-northeast-1c</option>
+                                        <option name="option">N/A</option>
+                                        <option name="option">sa-east-1a  </option>
+                                        <option name="option">sa-east-1b</option>
+                                        <option name="option">sa-east-1c</option>
+                                        <option name="option">N/A</option>
+                                        <option name="option">ap-south-1a </option>
+                                        <option name="option">ap-south-1b</option>
+                                        <option name="option">us-east-1a  </option>
+                                        <option name="option"> us-east-1b</option>
+                                        <option name="option">us-east-1c</option>
+                                        <option name="option">us-east-1d</option>
+                                        <option name="option"> us-east-1e</option>
+                                        <option name="option">us-east-2a</option>
+                                        <option name="option">us-east-2b</option>
+                                        <option name="option"> us-east-2c</option>
+                                        <option name="option">us-west-1a</option>
+                                        <option name="option"> us-west-1b</option>
+                                        <option name="option"> us-west-1c</option>
+                                        <option name="option">us-west-2a  </option>
+                                        <option name="option">us-west-2b</option>
+                                        <option name="option">us-west-2c</option>
+                                        <option name="option">af-south-1a </option>
+                                        <option name="option">af-south-1b</option>
+                                        <option name="option">ap-east-1a </option>
+                                        <option name="option">ap-east-1b</option>
+                                        <option name="option">ap-south-1a  </option>
+                                        <option name="option">ap-south-1b</option>
+                                        <option name="option">ap-south-1c</option>
+                                        <option name="option">ap-northeast-3a</option>
+                                        <option name="option"> ap-northeast-3c</option>
+                                        <option name="option">ap-northeast-2a </option>
+                                        <option name="option">ap-northeast-2c</option>
+                                        <option name="option">ap-southeast-1a </option>
+                                        <option name="option"> ap-southeast-1b</option>
+                                        <option name="option">ap-southeast-1c</option>
+                                        <option name="option">ap-southeast-2a </option>
+                                        <option name="option"> ap-southeast-2b</option>
+                                        <option name="option">ap-southeast-2c</option>
+                                        <option name="option">ap-northeast-1a </option>
+                                        <option name="option">ap-northeast-1c</option>
+                                        <option name="option">ca-central-1a </option>
+                                        <option name="option">ca-central-1b</option>
+                                        <option name="option">cn-north-1a  </option>
+                                        <option name="option">cn-north-1b</option>
+                                        <option name="option">cn-north-1c</option>
+                                        <option name="option">cn-northwest-1a  </option>
+                                        <option name="option">cn-northwest-1b</option>
+                                        <option name="option">cn-northwest-1c</option>
+                                        <option name="option">eu-central-1a  </option>
+                                        <option name="option">eu-central-1b</option>
+                                        <option name="option">eu-central-1c</option>
+                                        <option name="option">eu-west-1a  </option>
+                                        <option name="option">eu-west-1b</option>
+                                        <option name="option"> eu-west-1c</option>
+                                        <option name="option">eu-west-1d</option>
+                                        <option name="option">eu-west-1e</option>
+                                        <option name="option">eu-west-2a  </option>
+                                        <option name="option">eu-west-2b</option>
+                                        <option name="option">eu-west-2c</option>
+                                        <option name="option">eu-south-1a  </option>
+                                        <option name="option">eu-south-1b</option>
+                                        <option name="option">eu-south-1c</option>
+                                        <option name="option">eu-west-3a  </option>
+                                        <option name="option">eu-west-3b</option>
+                                        <option name="option">eu-west-3c</option>
+                                        <option name="option">eu-north-1a  </option>
+                                        <option name="option">eu-north-1b</option>
+                                        <option name="option">eu-north-1c</option>
+                                        <option name="option">me-south-1a  </option>
+                                        <option name="option">me-south-1b</option>
+                                        <option name="option">me-south-1c</option>
+                                        <option name="option">sa-east-1a </option>
+                                        <option name="option"> sa-east-1b</option>
+                                        <option name="option">sa-east-1c</option>
+                                       
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col d-flex align-items-center " style="justify-content: space-evenly;">
+                                <label for="" class="col d-flex align-items-left" style="justify-content: space-between;">Credentials :</label>
+                                <input type="text" name="Credentials" placeholder="Credentials" id="txt28">
+                            </div>
+                            <div class="col d-flex align-items-center " style="justify-content: space-evenly;">
+                                <label for="" class="col d-flex align-items-left" style="justify-content: space-between;">Vpc Name :</label>
+                                <input type="text" name="vpc name" placeholder="Vpc Name" id="txt29">
+                            </div>
+                            <div class="col SubCreate d-flex align-items-center " style="justify-content: space-evenly;">
+                                <label for="" class="col d-flex align-items-left" style="justify-content: space-between;">Sub-Create-Subnetwork :</label>
+                                <div class="col SubCreate d-flex align-items-center me-5" style="justify-content: space-evenly;">
+                                    <input type="radio"  placeholder="Vpc Name" name="gender" value="true" id="txt30"><span>true</span>
+                                <input type="radio" placeholder="Vpc Name" name="gender"value="false" id="txt31"><span>False</span>
+                                </div>
+                            </div>
+                            <div class="col d-flex align-items-center " style="justify-content: space-evenly;">
+                                <label for="" class="col d-flex align-items-left" style="justify-content: space-between;">Routing-Mode :</label>
+                                <input type="text" name="routing-mode" placeholder="Routing-Mode" id="txt32">
+                            </div>
+                            <div class="col d-flex align-items-center " style="justify-content: space-evenly;">
+                                <label for="" class="col d-flex align-items-left" style="justify-content: space-between;">Sub-net-Name :</label>
+                                <input type="text" name="sub-net-name" placeholder="Sub-net-Name" id="txt33">
+                            </div>
+                            <div class="col d-flex align-items-center " style="justify-content: space-evenly;">
+                                <label for="" class="col mb-3 d-flex align-items-left" style="justify-content: space-between;">Subnet-cidr :</label>
+                                <input type="text" name="subnet-cidr" placeholder="Subnet-cidr" id="txt34" >
+                            </div>
+                        </div>
+                        <div class="col d-flex align-items-center justify-content-center">
+                            <footer>
+                                <button class="button" id="button">Create</button>
+                            </footer>
+                        </div>
+                        <!-- input form -->
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- Popup content 
+        <div class="popup" id="popup">
+            <div class="popup-content">
+                <h3>check Your Data</h3> <br>
+                <div class="output" id="output1">
+                </div>
+                <div class="p_button">
+                  <button class="close" id="button">Back</button>
+                  <button class="close" id="button">Proceed</button>
+                </div>
+            </div>
+          </div>-->
+        <!-- Popup content -->
+    </div>
+    <script src="{{ url_for('static', filename='googlevpc/googlevpc.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

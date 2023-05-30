@@ -16,8 +16,9 @@ app.config['MYSQL_PASSWORD'] = 'T@mil2203'
 app.config['MYSQL_DB'] = 'varun1'
 
 mysql = MySQL(app)
-
- 
+access_token = "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" 
+g = Github(access_token)
+user = g.get_user()
 
 # @app.route('/')
 @app.route('/login', methods =['GET', 'POST'])
@@ -29,9 +30,7 @@ def login():
 		cursor = mysql.connection.cursor(MySQLdb.cursors.DictCursor)
 		cursor.execute('SELECT * FROM accounts WHERE email = % s AND password = % s', (email, password, ))
 		account = cursor.fetchone()
-
 		if account:
-         
 			session['loggedin'] = True
 			#session['id'] = account['id']
 			session['email'] = account['email']
@@ -98,7 +97,7 @@ def ecr():
 
 @app.route('/repo', methods=['POST', 'GET']) 
 def repo():
-   access_token = "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" 
+   # access_token = "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" 
    repo_name = request.form['repo-name']
    access_key = request.form['access']
    secret_key = request.form['secret']
@@ -107,8 +106,8 @@ def repo():
    mutability = request.form['mutability']
    scan = request.form['scan']
    try:
-      g = Github(access_token)
-      user = g.get_user()
+      # g = Github(access_token)
+      # user = g.get_user()
       repo = user.create_repo(repo_name, private=True)  
    
       repo_url = f'https://{access_token}@github.com/Tamilbobby/{repo_name}.git'
@@ -148,7 +147,7 @@ def vpc():
 
 @app.route('/virtualprivate', methods=['POST', 'GET'])
 def virtualprivate():
-   access_token = "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" 
+   # access_token = "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" 
    
    aim = request.form['aim id']
    instance = request.form['instance type']
@@ -159,8 +158,8 @@ def virtualprivate():
    pro = request.form['Protocol']
    repo_name = request.form['region']
    try:
-      g = Github(access_token)
-      user = g.get_user()
+      # g = Github(access_token)
+      #user = g.get_user()
       repo = user.create_repo(repo_name, private=True)
    
       repo_url = f'https://{access_token}@github.com/Tamilbobby/{repo_name}.git'
@@ -198,7 +197,7 @@ def ec2():
 
 @app.route('/cloudcompute', methods=['POST', 'GET'])
 def cloudcompute():
-   access_token = "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" 
+   # access_token = "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" 
    repo_name = request.form['rt tags']
    azs = request.form['azs']
    routec = request.form['route:cidr']
@@ -211,8 +210,8 @@ def cloudcompute():
    sec = request.form['secret key']
    
    try:
-    g = Github(access_token)
-    user = g.get_user()
+   #  g = Github(access_token)
+    #user = g.get_user()
     repo = user.create_repo(repo_name, private=True)
    
     repo_url = f'https://{access_token}@github.com/Tamilbobby/{repo_name}.git'
@@ -250,7 +249,7 @@ def eks():
 
 @app.route('/eksrepo', methods=['POST', 'GET'])
 def eksrepo():
-   access_token = "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" 
+   # access_token = "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" 
    repo_name = request.form['rt tags']
    azs = request.form['azs']
    routecidr = request.form['route:cidr']
@@ -261,8 +260,8 @@ def eksrepo():
    secret = request.form['secret key']
    
    
-   g = Github(access_token)
-   user = g.get_user()
+   # g = Github(access_token)
+   #user = g.get_user()
    repo = user.create_repo(repo_name, private=True)
    
    repo_url = f'https://{access_token}@github.com/Tamilbobby/{repo_name}.git'
@@ -298,11 +297,11 @@ def bucket():
 
 @app.route('/bucketrepo', methods=['POST', 'GET'])
 def bucketrepo():
-   access_token = "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" 
+   # access_token = "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" 
    repo_name = request.form['rt tags']
    azs = request.form['azs']
-   g = Github(access_token)
-   user = g.get_user()
+   # g = Github(access_token)
+   #user = g.get_user()
    repo = user.create_repo(repo_name, private=True)
    
    repo_url = f'https://{access_token}@github.com/Tamilbobby/{repo_name}.git'
@@ -336,7 +335,7 @@ def rds():
 
 @app.route('/rdsrepo', methods=['POST', 'GET'])
 def rdsrepo():
-   access_token = "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" 
+   # access_token = "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" 
    repo_name = request.form['rt tags']
    azs = request.form['azs']
    routec = request.form['route:cidr']
@@ -349,8 +348,8 @@ def rdsrepo():
    sec = request.form['secret key']
 
    
-   g = Github(access_token)
-   user = g.get_user()
+   # g = Github(access_token)
+   # user = g.get_user()
    repo = user.create_repo(repo_name, private=True)
    
    repo_url = f'https://{access_token}@github.com/Tamilbobby/{repo_name}.git'
@@ -377,5 +376,57 @@ def rdsrepo():
    return 'success'
 
 #################### RDS END #####################
+#####################google cloud############
+
+@app.route('/googlecloud')
+def googlecloud():
+   return render_template('googlecloud_index.html')
+
+
+
+
+@app.route('/googlevpc')
+def googlevpc():
+   return render_template('googlevpc.html')
+
+
+@app.route('/googlecloudvpc', methods=['POST', 'GET'])
+def googlecloudvpc():
+    repo_name = request.form['project id']
+    vpcn = request.form['vpc name']
+    Credential = request.form['Credentials']
+    route = request.form['routing-mode']
+    subnet = request.form['sub-net-name']
+    subnetc = request.form['subnet-cidr']
+    
+
+   
+   # g = Github(access_token)
+   # user = g.get_user()
+    repo = user.create_repo(repo_name, private=True)
+   
+    repo_url = f'https://{access_token}@github.com/Tamilbobby/{repo_name}.git'
+   
+    directory = f"/user-one/rds-repos/{repo_name}"
+   
+    Repo.clone_from(repo_url, directory)
+    file = directory 
+   
+    with open(file, 'w') as f:
+       dq = '"'
+       values = [f"vpcn = {dq}{vpcn}{dq}", "\n", f"Credential = {dq}{Credential}{dq}", "\n", f"route = {dq}{route}{dq}", "\n",
+                f"subnet = {dq}{subnet}{dq}", "\n", f"subnetc = {dq}{subnetc}{dq}"]
+       f.writelines(values)
+   
+       repo = Repo(directory)
+   #os.system(f'cp -r /user-one/rds-terraform/*.tf {directory}')
+       repo.git.add('.')
+       repo.index.commit("added demo")
+       origin = repo.remote(name='origin')
+       origin.push()   
+   
+       return 'success'
+
+
 if __name__ == '__main__':
    app.run(debug=True)
